@@ -18,12 +18,16 @@ export const Circulo = styled.div`
 `
 
 export const ContainerImagem = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     height: calc((2*var(--larguraImagemSites)*9/16) + 1.8*(var(--diametroCirculo)));
     top: calc(100vh - 0.6*var(--diametroCirculo) - (var(--larguraImagemSites)*9/16));
     left: 50%;
     transform: translateX(-50%);
     z-index: 50;
+    background-color: #00f;
 `
 
 

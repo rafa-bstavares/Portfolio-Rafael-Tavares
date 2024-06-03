@@ -13,7 +13,7 @@ body {
   --larguraIconeGrande: 10vw;
   --larguraIconeMedio: 5vw;
   --larguraIconePequeno: 2.5vw;
-  --tempoAnimacao: 2s
+  --tempoAnimacaoIcone: 2s
 }
 
 @keyframes animacaoSairG1{
@@ -102,11 +102,11 @@ body {
 }
 
 
-@keyframes giroSairImagem {
+@keyframes giroAntiHorImagem {
   15%{
     transform: translateX(-50%) rotate(10deg);
   }
   100%{
-    transform: translateX(-50%) rotate(-120deg);
+    transform: translateX(-50%) rotate(-180deg);
   }
 }

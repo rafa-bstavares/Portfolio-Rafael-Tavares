@@ -7,13 +7,12 @@ import iconeCasa from "./assets/images/CasaPngComprimida.png"
 
 function App() {
 
-  const [idTelaAtual, setIdTelaAtual] = useState<number>(0)
+
 
   return (
     <>
       <Sty.divGeralSecaoSite>
-        <SecaoSite id={idTelaAtual} taNaTela={true} img={imgImmobiliare} fundo={fundoImmobiliare} icone={iconeCasa} />
-        {/*<SecaoSite id={idTelaAtual} taNaTela={false}/>*/}
+        <SecaoSite taNaTela={true} img={imgImmobiliare} fundo={fundoImmobiliare} icone={iconeCasa} />
       </Sty.divGeralSecaoSite>
       
     </>
