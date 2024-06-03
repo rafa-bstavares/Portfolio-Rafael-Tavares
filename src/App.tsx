@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Sty.divGeralSecaoSite>
-        <SecaoSite taNaTela={true} img={imgImmobiliare} fundo={fundoImmobiliare} icone={iconeCasa} />
+        <SecaoSite taNaTela={true} />
       </Sty.divGeralSecaoSite>
       
     </>

@@ -110,3 +110,97 @@ body {
     transform: translateX(-50%) rotate(-180deg);
   }
 }
+
+@keyframes giroHorImagem {
+  15%{
+    transform: translateX(-50%) rotate(-10deg);
+  }
+  100%{
+    transform: translateX(-50%) rotate(180deg);
+  }
+}
+
+
+@keyframes animacaoEntrarG1{
+  80%{
+    top: 20%;
+    left: 15%;
+  }
+  100%{
+      top:7%;
+      left: 5%;
+      transform: rotate(-20deg);
+  }
+}
+
+@keyframes animacaoEntrarG2{
+  80%{
+    bottom: 16%;
+    right: 15%;
+  }
+  100%{
+      bottom: 3%;
+      right: 5%;
+      transform: rotateZ(17deg) rotateY(-180deg);
+  }
+}
+
+@keyframes animacaoEntrarM1{
+  80%{
+    bottom: 18%;
+    left: 15%;
+  }
+  100%{
+      bottom: 15%;
+      left: 5%;
+      transform: rotate(10deg);
+  }
+}
+
+@keyframes animacaoEntrarM2{
+  80%{
+    top: 10%;
+    right: 10%;
+  }
+  100%{
+      top: 5%;
+      right: 5%;
+      transform:rotateZ(-15deg) rotateY(-180deg);
+  }
+}
+
+@keyframes animacaoEntrarM3{
+  80%{
+    top: 25%;
+    right: 30%;
+  }
+  100%{
+      top: 20%;
+      right: 27%;
+      transform:rotateZ(-10deg) rotateY(-180deg);
+  }
+}
+
+@keyframes animacaoEntrarP1{
+  80%{
+    top: 48%;
+    left: 20%;
+  }
+  100%{
+      top:50%;
+      left: 15%;
+      transform: rotate(5deg);
+  }
+}
+
+@keyframes animacaoEntrarP2{
+  20%{
+    top: 10%;
+    left: 37%;
+  }
+  100%{
+      top: 5%;
+      left: 35%;
+      transform:  rotate(-24deg);
+  }
+}

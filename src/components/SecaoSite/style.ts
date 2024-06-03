@@ -27,9 +27,12 @@ export const ContainerImagem = styled.div`
     left: 50%;
     transform: translateX(-50%);
     z-index: 50;
-    background-color: #00f;
 `
-
+export const Fundo2 = styled.div`
+    position: absolute;
+    inset: 0;
+    transition: all var(--tempoAnimacaoIcone) linear;
+`
 
 export const ImagemSite = styled.img`
     width: var(--larguraImagemSites);
