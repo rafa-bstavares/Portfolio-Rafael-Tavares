@@ -1,26 +1,26 @@
 import * as C from "./style"
-import { Dispatch, SetStateAction, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import seta from "../../assets/images/Seta.svg"
 import imgImmobiliare from "../../assets/images/immobiliare.png"
-import fundoImmobiliare from "../../assets/images/fundoImmobiliare.jpg"
+import fundoImmobiliare from "../../assets/images/fundoImmobiliare5.jpg"
 import iconeCasa from "../../assets/images/CasaPngComprimida.png"
 import imgCriadores from "../../assets/images/imgCriadores.png"
-import fundoCriadores from "../../assets/images/fundoCriadores.jpg"
+import fundoCriadores from "../../assets/images/fundocriadores4.jpg"
 import iconeCriadores from "../../assets/images/iconeCriadores.png"
 import imgStudio from "../../assets/images/imgStudio.png"
-import fundoStudio from "../../assets/images/fundoStudio.jpg"
+import fundoStudio from "../../assets/images/fundostudio4.jpg"
 import iconeStudio from "../../assets/images/iconeStudio.png"
 
 type Props = {
     taNaTela: boolean,
 }
 
-export default function SecaoSite({taNaTela}: Props){
+export default function SecaoSite({}: Props){
 
     const [animSair, setAnimSair] = useState<boolean>(false)
     const [girarAntiHor,setGirarAntiHor] = useState<boolean>(false)
     const [girarHorario,setGirarHorario] = useState<boolean>(false)
-    const [animSairFim, setAnimSairFim] = useState<boolean>(false)
+    //const [animSairFim, setAnimSairFim] = useState<boolean>(false)
     const [imgFixa, setImgFixa] = useState<string>()
     const [iconeFixo, setIconeFixo] = useState<string>()
     const [imgProvisoria, setImgProvisoria] = useState<string>()
@@ -30,6 +30,8 @@ export default function SecaoSite({taNaTela}: Props){
     const [fundo2On, setFundo2On] = useState<boolean>(false)
     const [fundo2, setFundo2] = useState<string>()
     const [fundo, setFundo] = useState<string>()
+
+    //const ref1 = useRef<HTMLImageElement>(null)
 
     const arrSites = [
         {img: imgImmobiliare, fundo: fundoImmobiliare, icone: iconeCasa},
@@ -105,7 +107,7 @@ export default function SecaoSite({taNaTela}: Props){
             <C.Seta src={seta} onClick={cliqueSetaDireita} style={{transform: "translateX(calc(0.5 * var(--diametroCirculo)))", left: "50%"}} />{/* Seta direita */}
             <C.Seta src={seta} onClick={cliqueSetaEsquerda} style={{ rotate: "-180deg", translate: "calc(-0.5 * var(--diametroCirculo))", right: "50%"}} />{/* Seta esquerda */}
             <C.Circulo></C.Circulo>
-            <C.iconeAtual src={iconeFixo} style={{left: "5%", top: "7%", transform: `rotate(-20deg)`, width: "var(--larguraIconeGrande)", animationName: `${animSair? "animacaoSairG1" : ""}`, animationDuration: `${animSair? "var(--tempoAnimacaoIcone)" : ""}`, animationFillMode: "forwards"}}/>
+            <C.iconeAtual src={iconeFixo} style={{left: "5%", top: "7%", transform: `rotate(-20deg)`, width: "var(--larguraIconeGrande)", animationName: `${animSair? "animacaoSairG1" : ""}`, animationDuration: `${animSair? "var(--tempoAnimacaoIcone)" : "5s"}`, animationFillMode: "forwards"}}/>
             <C.iconeAtual src={iconeFixo} style={{right: "5%", bottom: "3%", transform: "rotateZ(17deg) rotateY(-180deg)", width: "var(--larguraIconeGrande)", animationName: `${animSair? "animacaoSairG2" : ""}`, animationDuration: `${animSair? "var(--tempoAnimacaoIcone)" : ""}`, animationFillMode: "forwards"}}/>
             <C.iconeAtual src={iconeFixo} style={{left: "5%", bottom: "15%", rotate: "10deg", width: "var(--larguraIconeMedio)", animationName: `${animSair? "animacaoSairM1" : ""}`, animationDuration: `${animSair? "var(--tempoAnimacaoIcone)" : ""}`, animationFillMode: "forwards"}}/>
             <C.iconeAtual src={iconeFixo} style={{right: "5%", top: "5%", transform: "rotateZ(-15deg) rotateY(-180deg)", width: "var(--larguraIconeMedio)", animationName: `${animSair? "animacaoSairM2" : ""}`, animationDuration: `${animSair? "var(--tempoAnimacaoIcone)" : ""}`, animationFillMode: "forwards"}}/>

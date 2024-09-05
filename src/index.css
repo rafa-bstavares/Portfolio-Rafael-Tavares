@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   margin: 0;
@@ -5,9 +8,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+  
 }
 
 :root{
+  --larguraContainer: 90%;
   --diametroCirculo: 30vw;
   --larguraImagemSites: 40vw;
   --larguraIconeGrande: 10vw;
@@ -202,5 +208,60 @@ body {
       top: 5%;
       left: 35%;
       transform:  rotate(-24deg);
+  }
+}
+
+@keyframes animacaoBlur{
+  0%{
+    filter: blur(40px);
+  }
+  45%, 55%{
+    filter: blur(0px);
+  }
+  100%{
+    filter: blur(40px);
+  }
+}
+
+@keyframes float{
+  20%{
+    top: 4%;
+    left: 3%;
+  }
+  60%{
+    top: 10%;
+    left: 8%;
+  }
+  100%{
+    top: 7%;
+    left: 5%;
+  }
+}
+
+.col{
+  color: #c0c0c0;
+}
+
+.clip-svg {
+  clip-path: url(#myClip);
+}
+
+
+@keyframes float{
+  20%{
+    top:7%;
+    left: 5%;
+    transform: rotate(-20deg);
+
+  }
+  60%{
+    top: 20%;
+    left: 8%;
+  }
+  100%{
+    top:7%;
+    left: 5%;
+    transform: rotate(-20deg);
+
   }
 }

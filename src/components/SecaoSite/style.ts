@@ -1,4 +1,4 @@
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 
 export const ContainerGeral = styled.div`
     position: absolute;
@@ -40,14 +40,17 @@ export const ImagemSite = styled.img`
     bottom: calc(0.6 * var(--diametroCirculo));
 `
 
+
+
 export const Seta = styled.img`
     width: calc(0.12 * var(--diametroCirculo));
     height: auto;
     position: absolute;
     bottom: calc(0.2 * var(--diametroCirculo));
     cursor: pointer;
-    z-index: 60;
+    z-index: 1000000;
 `
+
 
 export const iconeAtual = styled.img`
     position: absolute;
